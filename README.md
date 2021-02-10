@@ -1,7 +1,8 @@
 ## Compacted Userarea
 
-![](https://gyazo.com/d55bd064fc1fb1f8cef6184ee5452bce)
-
+<p align="center">
+    <img src="https://i.gyazo.com/d55bd064fc1fb1f8cef6184ee5452bce.png">
+</p>
 ### Description
 This Mini-Theme for Discord reduces the Userarea to the top left Corner while keeping *most* of the Functions. You can change your Status by clicking on your name in the Top Bar. This Theme will most likely not work that well on Operating Systems differing from Windows since i have no Machines to test it on.
 
