@@ -13,7 +13,7 @@
     --cu-statuspickerwidth: 1;
 
     //set below to 0 to not have a divider
-    --cu-dvider: 1;
+    --cu-divider: 1;
 }
 
 // transparent top bar + shifted wordmark 312
@@ -52,7 +52,7 @@
         }
         &::after {
             content: "";
-            height: calc(2px * var(--cu-dvider));
+            height: calc(2px * var(--cu-divider));
             width: 52px;
             top: 54px;
             position: absolute;
