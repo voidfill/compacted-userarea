@@ -46,9 +46,13 @@
         position: sticky;
         top: 0px;
         padding-bottom: 6px;
-        z-index: 3;
-        .wrapper-25eVIn .wrapper-1BJsBx .childWrapper-anI2G9 {
-            display: none;
+        z-index: 1;
+        background: linear-gradient(to bottom, var(--cu-serverlistbg) 55px, transparent 55px);
+        .wrapper-25eVIn .wrapper-1BJsBx {
+            z-index: 5;
+            .childWrapper-anI2G9 {
+                display: none;
+            }
         }
         &::after {
             content: "";
@@ -64,7 +68,7 @@
 
 //adjust backgrounds to make up for transparent top bar
 .bg-h5JY_x {
-    top: -24px!important;
+    top: -24px !important;
     background: linear-gradient(to right, var(--cu-serverlistbg) 72px, var(--cu-topbarbg) 72px);
 }
 .container-16j22k {
@@ -73,42 +77,51 @@
 
 //move statuspicker
 #status-picker {
-    position: relative!important;
-    top: -110px!important;
-    left: 80px!important;
+    position: relative !important;
+    top: -5px !important;
+    left: 80px !important;
 }
 
 .panels-j1Uci_ .container-3baos1 {
     height: 0;
+    //mute deafen
+    .flex-1O1GKY .button-14-BFJ:nth-last-child(-n + 3) {
+        width: 36px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 24px;
+        z-index: 3;
+        border-radius: 0;
+        background-color: var(--cu-serverlistbg);
+        &:hover {
+            filter: brightness(110%);
+        }
+    }
     //settings
-    .flex-1O1GKY .button-14-BFJ:nth-child(3) {
+    .flex-1O1GKY .button-14-BFJ:nth-last-child(1) {
         position: fixed;
         left: 0px;
         top: -10px;
         padding-top: 34px;
         width: 72px;
         height: 86px;
-        z-index: 3;
-        &:hover {
-            background-color: transparent;
-        }
+        z-index: 2;
+        background-color: var(--cu-serverlistbg);
+        border-radius: 0;
         .contents-18-Yxp {
             transform: scale(2);
         }
     }
-    //mute deafen
-    .flex-1O1GKY .button-14-BFJ:nth-child(-n + 2) {
-        width: 36px;
+    //game activity toggle
+    .flex-1O1GKY .button-14-BFJ:nth-last-child(4) {
         position: fixed;
-        top: 0;
+        bottom: 0;
         left: 0;
-        height: 24px;
-        z-index: 4;
-        border-radius: 0;
+        width: 72px;
+        height: 36px;
         background-color: var(--cu-serverlistbg);
-        &:hover {
-            filter: brightness(110%);
-        }
+        border-radius: 0;
     }
     .flex-1O1GKY .button-14-BFJ:nth-child(2) {
         //set :nth-child() to 1 to have deafen at the very left, 2 for mute
@@ -120,18 +133,19 @@
         left: 0;
         top: 0;
         width: 312px;
-        height: 132px;
+        height: 24px;
         margin: 0;
-        clip-path: polygon(0 0, 100% 0, 100% 24px, 72px 24px, 72px 100%, 0 100%);
-        background-color: transparent;
-        z-index: 2;
+        //clip-path: polygon(0 0, 100% 0, 100% 24px, 72px 24px, 72px 100%, 0 100%);
+        z-index: 1;
         cursor: pointer;
         background: linear-gradient(to bottom, transparent 24px, var(--cu-serverlistbg) 24px);
         .avatar-SmRMf2 {
+            position: absolute;
             height: 48px !important;
             width: 48px !important;
             margin-left: 12px;
             margin-top: 76px;
+            pointer-events: none;
         }
     }
     //name at the top
