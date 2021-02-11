@@ -6,7 +6,7 @@
 * @source https://github.com/voidfill/compacted-userarea
 */
 
-@import url(https://cdn.statically.io/gh/voidfill/compacted-userarea/main/base.css);
+@import url(https://cdn.statically.io/gh/voidfill/compacted-userarea/main/src/base.css);
 
 :root {
     /*default: var(--background-tertiary);*/
