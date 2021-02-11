@@ -3,6 +3,6 @@
     "description": "reduces the userarea in size and moves it to the top left. click on your name to change status.",
     "version": "0.1",
     "author": "ѵοіd#1000",
-    "theme": "_index.scss",
+    "theme": "_indexvz.scss",
     "license": "MIT"
 }
