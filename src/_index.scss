@@ -123,8 +123,8 @@
         background-color: var(--cu-serverlistbg);
         border-radius: 0;
     }
-    .flex-1O1GKY .button-14-BFJ:nth-child(2) {
-        //set :nth-child() to 1 to have deafen at the very left, 2 for mute
+    .flex-1O1GKY .button-14-BFJ:nth-last-child(2) {
+        //set :nth-child() to 3 to have deafen at the very left, 2 for mute
         left: 36px;
     }
     //avatar
