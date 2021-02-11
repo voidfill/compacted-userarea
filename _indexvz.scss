@@ -1,0 +1,170 @@
+:root {
+    //default: var(--background-tertiary);
+    --cu-serverlistbg: var(--background-tertiary);
+
+    //default: var(--background-tertiary);
+    --cu-topbarbg: var(--background-tertiary);
+
+    //default: var(--background-modifier-accent);
+    --cu-dividercolor: var(--background-modifier-accent);
+
+    //set below to a value between 0 and 1 to have the statuspicker width be respective to the channelwidth
+    //for example 0.5 would be half of the channels
+    --cu-statuspickerwidth: 1;
+
+    //set below to 0 to not have a divider
+    --cu-divider: 1;
+}
+
+// transparent top bar + shifted wordmark 312
+.titleBar-AC4pGV {
+    width: calc(100% - calc(72px + var(--cu-statuspickerwidth) * 240px));
+    margin-left: calc(72px + var(--cu-statuspickerwidth) * 240px);
+    background-color: transparent;
+    margin-top: 0;
+    height: 24px;
+    .wordmark-2iDDfm {
+        margin-left: 310px;
+    }
+    .winButton-iRh8-Z {
+        top: 0px;
+        height: 24px;
+    }
+}
+
+//move guilds and homebutton
+.scroller-2TZvBN {
+    background-color: var(--cu-serverlistbg);
+}
+.guilds-1SWlCJ {
+    padding-top: 48px;
+    background-color: var(--cu-serverlistbg);
+    .unreadMentionsIndicatorTop-gA6RCh {
+        margin-top: 104px;
+    }
+    .tutorialContainer-1v44GL {
+        position: sticky;
+        top: 0px;
+        padding-bottom: 6px;
+        z-index: 4;
+        background-color: var(--cu-serverlistbg);
+        .wrapper-25eVIn .wrapper-1BJsBx .childWrapper-anI2G9 {
+            display: none;
+        }
+        &::after {
+            content: "";
+            height: calc(2px * var(--cu-divider));
+            width: 52px;
+            top: 54px;
+            position: absolute;
+            margin-left: 10px;
+            background-color: var(--cu-dividercolor);
+        }
+    }
+}
+
+//adjust backgrounds to make up for transparent top bar
+.bg-h5JY_x {
+    top: -24px!important;
+    background: linear-gradient(to right, var(--cu-serverlistbg) 72px, var(--cu-topbarbg) 72px);
+}
+.container-16j22k {
+    background: linear-gradient(to bottom, var(--cu-topbarbg) 24px, var(--background-tertiary) 24px);
+}
+
+//move statuspicker
+#status-picker {
+    position: relative!important;
+    top: -5px!important;
+    left: 80px!important;
+}
+
+.panels-j1Uci_ .container-3baos1 {
+    height: 0;
+    //settings
+    .flex-1O1GKY .button-14-BFJ:nth-child(3) {
+        position: fixed;
+        left: 0px;
+        top: -10px;
+        padding-top: 34px;
+        width: 72px;
+        height: 86px;
+        z-index: 2;
+        background-color: var(--cu-serverlistbg);
+        border-radius: 0;
+        .contents-18-Yxp {
+            transform: scale(2);
+        }
+    }
+    //mute deafen
+    .flex-1O1GKY .button-14-BFJ:nth-child(-n + 2) {
+        width: 36px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 24px;
+        z-index: 3;
+        border-radius: 0;
+        background-color: var(--cu-serverlistbg);
+        &:hover {
+            filter: brightness(110%);
+        }
+    }
+    .flex-1O1GKY .button-14-BFJ:nth-child(2) {
+        //set :nth-child() to 1 to have deafen at the very left, 2 for mute
+        left: 36px;
+    }
+    //avatar
+    .avatarWrapper-2yR4wp {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 312px;
+        height: 24px;
+        margin: 0;
+        //clip-path: polygon(0 0, 100% 0, 100% 24px, 72px 24px, 72px 100%, 0 100%);
+        z-index: 1;
+        cursor: pointer;
+        background: linear-gradient(to bottom, transparent 24px, var(--cu-serverlistbg) 24px);
+        .avatar-SmRMf2 {
+            position: absolute;
+            height: 48px !important;
+            width: 48px !important;
+            margin-left: 12px;
+            margin-top: 76px;
+            pointer-events: none;
+        }
+    }
+    //name at the top
+    .nameTag-3uD-yy {
+        position: fixed;
+        left: 76px;
+        top: 3px;
+        width: 235px;
+        display: flex;
+        flex-direction: row;
+        .usernameContainer-1fp4nu {
+            flex: none;
+        }
+        .size14-e6ZScH {
+            font-size: 16px;
+        }
+        .subtext-3CDbHg {
+            padding-left: 4px;
+            overflow: hidden;
+            line-height: 18px;
+            .customStatus-3tC2ig img {
+                position: relative;
+                top: -2px;
+            }
+            .hoverRoll-YK53gQ .hovered-d5PMVU {
+                opacity: 0 !important;
+            }
+            .hoverRoll-YK53gQ .default-3sgIpy {
+                -webkit-transform: unset !important;
+                transform: unset !important;
+                opacity: 1 !important;
+            }
+        }
+    }
+}
