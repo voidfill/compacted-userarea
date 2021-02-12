@@ -1,9 +1,9 @@
 {
-    "icon": "./src/icon.png",
+    "icon": "src/icon.png",
     "name": "compacted userarea",
     "description": "reduces the userarea in size and moves it to the top left. click on your name to change status.",
     "version": "0.3",
     "author": "ѵοіd#1000",
-    "theme": "./src/_index.scss",
+    "theme": "src/_index.scss",
     "license": "MIT"
 }
