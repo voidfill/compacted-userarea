@@ -2,8 +2,7 @@
 	width: calc(100% - calc(72px + var(--cu-statuspickerwidth) * 240px));
 	margin-left: calc(72px + var(--cu-statuspickerwidth) * 240px);
 	background-color: transparent;
-	margin-top: 0;
-	height: 24px;
+	height: 20px;
 }
 
 .titleBar-AC4pGV .wordmark-2iDDfm {
@@ -11,7 +10,7 @@
 }
 
 .titleBar-AC4pGV .winButton-iRh8-Z {
-	top: 0px;
+	top: -4px;
 	height: 24px;
 }
 
@@ -127,7 +126,7 @@
 	margin: 0;
 	z-index: 1;
 	cursor: pointer;
-	background: linear-gradient(to bottom, transparent 24px, var(--cu-serverlistbg) 24px);
+	background-color: transparent;
 }
 
 .panels-j1Uci_ .container-3baos1 .avatarWrapper-2yR4wp .avatar-SmRMf2 {
