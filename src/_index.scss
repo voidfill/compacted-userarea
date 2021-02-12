@@ -146,6 +146,9 @@
             margin-left: 12px;
             margin-top: 76px;
             pointer-events: none;
+            svg > rect {
+                pointer-events: none;
+            }
         }
     }
     //name at the top
