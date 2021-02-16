@@ -31,12 +31,12 @@
 	position: sticky;
 	top: 0px;
 	padding-bottom: 6px;
-	z-index: 1;
-	background: linear-gradient(to bottom, var(--cu-serverlistbg) 55px, transparent 55px);
+	z-index: 4;
+	background: transparent;
 }
 
 .guilds-1SWlCJ .tutorialContainer-1v44GL .wrapper-25eVIn .wrapper-1BJsBx {
-	z-index: 5;
+	z-index: 50;
 }
 
 .guilds-1SWlCJ .tutorialContainer-1v44GL .wrapper-25eVIn .wrapper-1BJsBx .childWrapper-anI2G9 {
@@ -51,6 +51,12 @@
 	position: absolute;
 	margin-left: 10px;
 	background-color: var(--cu-dividercolor);
+}
+
+.guilds-1SWlCJ .tutorialContainer-1v44GL .lowerBadge-29hYVK {
+	transform: translate(0px, 0px) scale(1.1) !important;
+	right: -1px;
+	bottom: -1px;
 }
 
 .bg-h5JY_x {
@@ -99,6 +105,20 @@
 	border-radius: 0;
 }
 
+.panels-j1Uci_ .container-3baos1 .flex-1O1GKY .button-14-BFJ:nth-last-child(1)::after {
+	content: "";
+	position: absolute;
+	top: 80px;
+	height: 60px;
+	width: 72px;
+	background-color: var(--cu-serverlistbg);
+	pointer-events: none;
+}
+
+.panels-j1Uci_ .container-3baos1 .flex-1O1GKY .button-14-BFJ:nth-last-child(1):hover::after {
+	filter: brightness(0.9);
+}
+
 .panels-j1Uci_ .container-3baos1 .flex-1O1GKY .button-14-BFJ:nth-last-child(1) .contents-18-Yxp {
 	transform: scale(2);
 }
@@ -124,9 +144,9 @@
 	width: 312px;
 	height: 24px;
 	margin: 0;
-	z-index: 1;
+	z-index: 3;
 	cursor: pointer;
-	background-color: transparent;
+	background: transparent;
 }
 
 .panels-j1Uci_ .container-3baos1 .avatarWrapper-2yR4wp .avatar-SmRMf2 {
@@ -138,7 +158,7 @@
 	pointer-events: none;
 }
 
-.panels-j1Uci_ .container-3baos1 .avatarWrapper-2yR4wp .avatar-SmRMf2 svg > rect {
+.panels-j1Uci_ .container-3baos1 .avatarWrapper-2yR4wp .avatar-SmRMf2 svg>rect {
 	pointer-events: none;
 }
 

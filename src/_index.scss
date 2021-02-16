@@ -45,10 +45,10 @@
         position: sticky;
         top: 0px;
         padding-bottom: 6px;
-        z-index: 1;
-        background: linear-gradient(to bottom, var(--cu-serverlistbg) 55px, transparent 55px);
+        z-index: 4;
+        background: transparent;// linear-gradient(to bottom, var(--cu-serverlistbg) 55px, transparent 55px);
         .wrapper-25eVIn .wrapper-1BJsBx {
-            z-index: 5;
+            z-index: 50;
             .childWrapper-anI2G9 {
                 display: none;
             }
@@ -61,6 +61,11 @@
             position: absolute;
             margin-left: 10px;
             background-color: var(--cu-dividercolor);
+        }
+        .lowerBadge-29hYVK {
+            transform: translate(0px, 0px) scale(1.1)!important;
+            right: -1px;
+            bottom: -1px;
         }
     }
 }
@@ -108,6 +113,18 @@
         z-index: 2;
         background-color: var(--cu-serverlistbg);
         border-radius: 0;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 80px;
+            height: 60px;
+            width: 72px;
+            background-color: var(--cu-serverlistbg);
+            pointer-events: none;
+        }
+        &:hover::after {
+            filter: brightness(0.9);
+        }
         .contents-18-Yxp {
             transform: scale(2);
         }
@@ -135,7 +152,7 @@
         height: 24px;
         margin: 0;
         //clip-path: polygon(0 0, 100% 0, 100% 24px, 72px 24px, 72px 100%, 0 100%);
-        z-index: 1;
+        z-index: 3;
         cursor: pointer;
         background: transparent;
         .avatar-SmRMf2 {
