@@ -86,7 +86,7 @@
     left: 80px !important;
 }
 
-.panels-j1Uci_ .container-3baos1 {
+.panels-j1Uci_ .container-3baos1:last-child {
     height: 0;
     //mute deafen
     .flex-1O1GKY .button-14-BFJ:nth-last-child(-n + 3) {
@@ -197,6 +197,17 @@
                 transform: unset !important;
                 opacity: 1 !important;
             }
+        }
+    }
+}
+//porkord spotify
+.panels-j1Uci_ .powercord-spotify {
+    display: flex;
+    flex-direction: column-reverse;
+    &.hover .spotify-seek .spotify-seek-elements {
+        height: 20px;
+        .spotify-seek-duration {
+            margin-top: 8px;
         }
     }
 }

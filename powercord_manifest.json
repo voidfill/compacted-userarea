@@ -1,7 +1,7 @@
 {
     "name": "compacted userarea",
     "description": "reduces the userarea in size and moves it to the top left. click on your name to change status.",
-    "version": "0.4",
+    "version": "0.4.1",
     "author": "ѵοіd#1000",
     "theme": "./src/_index.scss",
     "license": "MIT"
